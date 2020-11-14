@@ -16,6 +16,6 @@ void setup(void)
 void loop(void)
 {
     potValue = analogRead(potPin);
-    potValue = map(potValue, 0, 1023, 0, 255); // scale it to use it with the servo (value between 0 and 255)
+    potValue = map(potValue, 0, 1023, 0, 255);
     led.write(potValue);
 }
